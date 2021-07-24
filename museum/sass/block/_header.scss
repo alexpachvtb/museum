@@ -1,0 +1,65 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 200px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 195px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  &__logo-icon {
+    width: 50px;
+    height: 34px;
+  }
+
+  &__logo-text {
+    font-family: "Forum", serif;
+    font-size: 28px;
+    line-height: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  .nav {
+    max-width: 720px;
+    &__wrapper {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      :nth-child(5) {
+        margin: 0;
+      }
+    }
+    &__link {
+      margin-right: 76px;
+      font-weight: 100;
+      font-size: 22px;
+      line-height: 50px;
+      letter-spacing: 2px;
+      a {
+        text-decoration: none;
+        color: #FFFFFF;
+      }
+      :hover {
+        color: $font-gold;
+      }
+      :active {
+        color: $font-gold;
+      }
+    }
+  }
+
+}

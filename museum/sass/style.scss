@@ -1,0 +1,30 @@
+@import 'libs/normalize';
+@import 'libs/fonts';
+@import 'base/variables';
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.section {
+    padding: 0 75px;
+    &_dark {
+        background-color: $bg-dark;
+    }
+    &_title {
+        font-size: $font1;
+    }
+    &_title-gold {
+        color: $font-gold;
+    }
+    &_subtitle {
+        font-size: $font2;
+    }
+}
+
+@import 'block/header';
