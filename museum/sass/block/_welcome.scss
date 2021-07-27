@@ -1,0 +1,35 @@
+.welcome {
+    height: 750px;
+    background: url("../assets/img/welcome.jpg") no-repeat $bg-dark;
+    background-position: calc(50% + 352px);
+    padding: 114px 0 256px 0;
+    &__title {
+        font-family: "Forum" ,serif;
+        margin: 0;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: #FFFFFF;
+    }
+    &__descr {
+        margin: 0;
+        margin-top: 28px;
+        font-weight: 100;
+        font-size: 28px;
+        letter-spacing: 2.2px;
+        color: #FFFFFF;
+    }
+    &__btn {
+        width: 360px;
+        height: 75px;
+        background-color: $dark-red;
+        margin-top: 76px;
+        font-size: 22px;
+        font-weight: 100;
+        text-align: center;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 10px;
+    }
+}
