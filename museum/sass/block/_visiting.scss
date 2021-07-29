@@ -7,6 +7,9 @@
         grid-template-columns: repeat(3, 440px);
         gap: 71px 60px;
     }
+    &__item-img {
+        width: 100%;
+    }
     &__item-title {
         margin-top: 21px;
         &::before {
@@ -15,10 +18,10 @@
         }
     }
     &__item-descr {
-        margin-top: 22px;
+        margin-top: 20px;
         font-weight: 200;
         font-size: 22px;
-        line-height: 30px;
+        line-height: 32px;
         color: #000000;
         span {
             font-size: 18px;
