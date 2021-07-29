@@ -3,9 +3,12 @@
     padding: 75px 0;
     &__wrapper {
         margin-top: 103px;
-        display: grid;
-        grid-template-columns: repeat(3, 440px);
+        display: flex;
+        flex-wrap: wrap;
         gap: 71px 60px;
+    }
+    &__item {
+        display: block;
     }
     &__item-img {
         width: 100%;
