@@ -1,6 +1,7 @@
 @import 'libs/normalize';
 @import 'libs/fonts';
 @import 'base/variables';
+@import 'base/mixins';
 
 * {
     font-family: "Roboto", sans-serif;
@@ -27,13 +28,25 @@
         text-transform: uppercase;
         letter-spacing: 5px;
     }
+    &_title-fz32 {
+        font-size: 32px;
+        line-height: 35px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #000000;
+    }
     &_title-gold {
         color: $font-gold;
     }
     &_subtitle {
         font-size: $font2;
     }
+    &_title-underline {
+        position: relative;
+        @include divider;
+    }
 }
 
 @import 'block/header';
 @import 'block/welcome';
+@import 'block/visiting';

@@ -1,0 +1,27 @@
+.visiting {
+    height: 1265px;
+    padding: 75px 0;
+    &__wrapper {
+        margin-top: 103px;
+        display: grid;
+        grid-template-columns: repeat(3, 440px);
+        gap: 71px 60px;
+    }
+    &__item-title {
+        margin-top: 21px;
+        &::before {
+            width: 68%;
+            bottom: -11px;
+        }
+    }
+    &__item-descr {
+        margin-top: 22px;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 30px;
+        color: #000000;
+        span {
+            font-size: 18px;
+        }
+    }
+}
