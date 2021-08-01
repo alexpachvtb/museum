@@ -9,6 +9,7 @@
 }
 
 .container {
+    position: relative;
     margin: 0 auto;
     width: 1440px;
     box-sizing: border-box;
@@ -51,3 +52,4 @@
 @import 'block/welcome';
 @import 'block/visiting';
 @import 'block/explore';
+@import 'block/video';

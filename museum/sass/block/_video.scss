@@ -1,0 +1,49 @@
+.video {
+    min-height: 1009px;
+    padding: 90px 0 75px 0;
+    &__screen {
+        width: 100%;
+    }
+    &__controls {
+        margin-top: -5px;
+        width: 100%;
+        height: 85px;
+        background-color: #000;
+        display: flex;
+        padding: 0 37px 0 33px;
+        justify-content: space-between;
+        &-volume {
+            margin-right: -15px;
+        }
+    }
+    &__btn {
+        border: none;
+        background-color: rgba(0, 0, 0, 0.0);;
+    }
+    &__controls-play {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 24%;
+    }
+    &__time {
+        width: 820px;
+    }
+    &__volume {
+        width: 155px;
+    }
+    &__descr {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        margin: 0;
+        padding-top: 10px;
+        flex-basis: 50%;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 38px;
+        color: #000;
+    }
+}
