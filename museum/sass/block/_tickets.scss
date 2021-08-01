@@ -1,0 +1,118 @@
+.tickets {
+    min-height: 893px;
+    padding: 75px 0;
+    &__title {
+        color: #fff;
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 105px;
+    }
+    &__img {
+        flex-basis: 50%;
+    }
+    &__panel-title {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    &__panel {
+        display: flex;
+        flex-basis: 50%;
+        justify-content: space-between;
+        padding-left: 60px;
+        color: #fff;
+    }
+    &__radio-list {
+        margin-top: 50px;
+        list-style-type: none;
+        padding: 0;
+    }
+    &__radio {
+        position: relative;
+        margin-bottom: 51px;
+        margin-left: 25px;
+        input {
+            opacity: 0;
+        }
+    }
+    &__label {
+        font-weight: 300;
+        font-size: 22px;
+        &-checkmark {
+            position: absolute;
+            top: 3px;
+            left: -24px;
+            height: 17px;
+            width: 17px;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #fff;
+            border-radius: 50%;
+            &:after {
+                content: '';
+                position: absolute;
+                display: none;
+                top: 3px;
+                left: 3px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: white;
+            }
+        }
+        cursor: pointer;
+        input:checked ~ .tickets__label-checkmark:after {
+            display: block;
+        }
+    }
+    &__amount {
+        &-label {
+            position: relative;
+        }
+        &-title {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+        &-number {
+            display: block;
+            margin: 10px 0 50px 0;
+            padding-left: 20px;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0);
+            border: 3px solid #fff;
+            outline: none;
+        }
+        &-btn-plus, &-btn-minus {
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            position: absolute;
+            top: 48px;
+            left: 113px;
+            cursor: pointer;
+        }
+        &-btn-minus {
+            top: 40px;
+            left: 11px;
+        }
+    }
+    &__total {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+        letter-spacing: 1.65px;
+        color: #FFFFFF;
+    }
+    &__buy-btn {
+        position: absolute;
+        width: 175px;
+        height: 50px;
+        bottom: 109px;
+        right: 0px;
+        font-weight: 300;
+        font-size: 22px;
+        letter-spacing: 2px;
+        color: #000000;
+    }
+}

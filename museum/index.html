@@ -105,11 +105,58 @@
               <p class="video__text">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
             </div>
           </div>
-          
         </section>
         <section class="tickets section section_dark">
           <div class="container">
-
+            <h2 class="tickets__title section_title section_title-underline">Buy tickets</h2>
+            <div class="tickets__wrapper">
+              <img class="tickets__img" src="assets/img/tickets.jpg" alt="tickets">
+              <div class="tickets__panel">
+                <div class="div">
+                  <div class="tickets__panel-title">Ticket Type</div>
+                  <ul class="tickets__radio-list">
+                    <li class="tickets__radio">
+                      <label class="tickets__label">
+                        <input type="radio" checked="checked" name="radio">
+                        Permanent exhibition
+                        <span class="tickets__label-checkmark"></span>
+                      </label>
+                    </li>
+                    <li class="tickets__radio">
+                      <label class="tickets__label">
+                        <input type="radio" name="radio">
+                        Temporary exhibition
+                        <span class="tickets__label-checkmark"></span>
+                      </label>
+                    </li>
+                    <li class="tickets__radio">
+                      <label class="tickets__label">
+                        <input type="radio" name="radio">
+                        Combined Admission
+                        <span class="tickets__label-checkmark"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tickets__amount">
+                  <div class="tickets__amount-title tickets__panel-title">Amount</div>
+                  <label class="tickets__label tickets__amount-label">
+                    Basic 18+
+                    <input type="number" min="0" max="20" value="1" readonly class="tickets__amount-number">
+                    <button class="tickets__amount-btn-plus"><img src="assets/icons/plus.svg" alt="plus"></button>
+                    <button class="tickets__amount-btn-minus"><img src="assets/icons/minus.svg" alt="minus"></button>
+                  </label>
+                  <label class="tickets__label tickets__amount-label">
+                    Senior 65+
+                    <input type="number" min="0" max="20" value="1" readonly class="tickets__amount-number">
+                    <button class="tickets__amount-btn-plus"><img src="assets/icons/plus.svg" alt="plus"></button>
+                    <button class="tickets__amount-btn-minus"><img src="assets/icons/minus.svg" alt="minus"></button>
+                  </label>
+                  <div class="tickets__total">Total €220</div>
+                  <button class="tickets__buy-btn">Buy Now</button>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section class="contacts section">
