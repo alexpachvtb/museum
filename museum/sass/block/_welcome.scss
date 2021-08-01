@@ -1,8 +1,8 @@
 .welcome {
-    height: 750px;
+    min-height: 750px;
     background: url("../assets/img/welcome.jpg") no-repeat $bg-dark;
     background-position: calc(50% + 352px);
-    padding: 114px 0 256px 0;
+    padding: 114px 0 245px 0;
     &__title {
         font-family: "Forum" ,serif;
         margin: 0;

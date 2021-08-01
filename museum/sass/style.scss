@@ -6,6 +6,7 @@
 * {
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -48,9 +49,34 @@
     }
 }
 
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 195px;
+    height: 50px;
+    cursor: pointer;
+    &-icon {
+        width: 50px;
+        height: 34px;
+      }
+    &-text {
+        font-family: "Forum", serif;
+        font-size: 28px;
+        line-height: 50px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+  
+@import 'block/nav';
 @import 'block/header';
 @import 'block/welcome';
 @import 'block/visiting';
 @import 'block/explore';
 @import 'block/video';
 @import 'block/tickets';
+@import 'block/contacts';
+@import 'block/footer';
