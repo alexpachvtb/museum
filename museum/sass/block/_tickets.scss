@@ -38,6 +38,13 @@
     &__label {
         font-weight: 300;
         font-size: 22px;
+        &-text {
+            color: #fff;
+            transition: 0.5s;
+            &:hover {
+                color: $font-gold;
+            }
+        }
         &-checkmark {
             position: absolute;
             top: 3px;
@@ -67,6 +74,7 @@
     &__amount {
         &-label {
             position: relative;
+            cursor: default;
         }
         &-title {
             text-align: right;
@@ -106,6 +114,7 @@
     }
     &__buy-btn {
         position: absolute;
+        background-color: #fff;
         width: 175px;
         height: 50px;
         bottom: 109px;
@@ -114,5 +123,10 @@
         font-size: 22px;
         letter-spacing: 2px;
         color: #000000;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover, &:active {
+            background-color: $font-gold;
+        }
     }
 }

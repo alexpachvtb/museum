@@ -31,5 +31,10 @@
         color: #FFFFFF;
         border: none;
         border-radius: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover, &:active {
+            background-color: $font-gold;
+        }
     }
 }

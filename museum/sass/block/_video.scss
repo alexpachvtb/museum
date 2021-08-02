@@ -18,7 +18,8 @@
     }
     &__btn {
         border: none;
-        background-color: rgba(0, 0, 0, 0.0);;
+        background-color: rgba(0, 0, 0, 0.0);
+        cursor: pointer;
     }
     &__controls-play {
         position: absolute;
