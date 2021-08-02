@@ -1,6 +1,9 @@
 .tickets {
     min-height: 893px;
     padding: 75px 0;
+    &__input {
+        position: relative;
+    }
     &__title {
         color: #fff;
     }
@@ -71,9 +74,9 @@
             display: block;
         }
     }
+    
     &__amount {
         &-label {
-            position: relative;
             cursor: default;
         }
         &-title {
@@ -96,12 +99,12 @@
             background-color: rgba(0, 0, 0, 0);
             border: none;
             position: absolute;
-            top: 48px;
+            top: 50px;
             left: 113px;
             cursor: pointer;
         }
         &-btn-minus {
-            top: 40px;
+            top: 45px;
             left: 11px;
         }
     }
