@@ -19,10 +19,16 @@
     margin-left: 215px;
     align-items: flex-end;
     justify-content: space-between;
+    &-icon path {
+        transition: 0.5s;
+    }
     &-link {
         padding: 0;
         :hover, :active {
             border: 2px solid $font-gold;
+            svg path {
+                fill: $font-gold;
+            }
         }
         a {
             display: flex;
