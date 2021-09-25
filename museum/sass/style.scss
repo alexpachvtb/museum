@@ -53,7 +53,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 195px;
+    width: 200px;
     height: 50px;
     text-decoration: none;
     :hover {
@@ -81,6 +81,14 @@
         color: #FFFFFF;
         transition: 0.5s;
     }
+}
+
+.streetview {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
 }
 
   

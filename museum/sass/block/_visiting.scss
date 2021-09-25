@@ -10,6 +10,7 @@
     &__item {
         display: block;
         cursor: pointer;
+        text-decoration: none;
         &:hover {
             .visiting__item-title {
                 &::before {

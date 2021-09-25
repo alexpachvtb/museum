@@ -1,8 +1,14 @@
 .welcome {
-    min-height: 750px;
-    background: url("../assets/img/welcome.jpg") no-repeat $bg-dark;
-    background-position: calc(50% + 352px);
-    padding: 114px 0 245px 0;
+    min-height: 810px;
+    background: $bg-dark;
+    padding: 150px 0 245px 0;
+    .container {
+        position: relative;
+    }
+    &__text {
+        position: relative;
+        z-index: 1;
+    }
     &__title {
         font-family: "Forum" ,serif;
         margin: 0;
@@ -20,21 +26,83 @@
         color: #FFFFFF;
     }
     &__btn {
+        display: flex;
         width: 360px;
         height: 75px;
         background-color: $dark-red;
         margin-top: 76px;
         font-size: 22px;
         font-weight: 100;
-        text-align: center;
+        align-items: center;
+        justify-content: center;
         letter-spacing: 2px;
         color: #FFFFFF;
-        border: none;
+        text-decoration: none;
         border-radius: 10px;
         cursor: pointer;
         transition: 0.5s;
         &:hover, &:active {
             background-color: $font-gold;
+        }
+    }
+    &__slider {
+        position: absolute;
+        z-index: 0;
+        width: 1000px;
+        height: 810px;
+        top: -150px;
+        right: 0;
+        background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url('../assets/img/slider/slider-1.jpg') top no-repeat;
+        &-panel {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            padding: 0 75px;
+            bottom: 0;
+            right: 0;
+            width: 600px;
+            height: 120px;
+            background-color: #030303;
+        }
+        &-digits {
+            font-size: 22px;
+            font-weight: 300;
+            color: #FFFFFF;
+            line-height: 22px;
+            letter-spacing: 2px;
+        }
+        &-points {
+            display: flex;
+            justify-content: space-between;
+            width: 180px;
+        }
+        &-point {
+            width: 16px;
+            height: 16px;
+            background-color: #FFF;
+            cursor: pointer;
+            transition: 0.3s all;
+            &_active {
+                background-color: $slider-point-active;
+            }
+        }
+        &-arrows {
+            width: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-prev, &-next {
+            cursor: pointer;
+            path {
+                transition: 0.3s all;
+            }
+            &:hover {
+                path {
+                    fill: $slider-point-active;
+                }
+            }
         }
     }
 }
