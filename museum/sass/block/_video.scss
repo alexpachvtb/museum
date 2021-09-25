@@ -1,16 +1,28 @@
 .video {
-    min-height: 1009px;
-    padding: 90px 0 75px 0;
+    min-height: 1396px;
+    padding: 75px 0 70px 0;
+    &__player {
+        position: relative;
+        background-color: red;
+        height: 735px;
+        margin-top: 75px;
+    }
     &__screen {
         width: 100%;
+        height: 89%;
+        background: url('../assets/img/poster0.jpg') center / cover no-repeat;
+        background-size:cover;
     }
     &__controls {
+        position: absolute;
+        bottom: 0;
         margin-top: -5px;
         width: 100%;
-        height: 85px;
+        height: 11%;
         background-color: #000;
         display: flex;
-        padding: 0 37px 0 33px;
+        padding: 0 25px;
+        align-items: center;
         justify-content: space-between;
         &-volume {
             margin-right: -15px;
@@ -29,16 +41,29 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: 24%;
+        top: 29%;
     }
     &__time {
-        width: 820px;
+        width: 930px;
     }
     &__volume {
         width: 155px;
     }
+    &__range {
+        -webkit-appearance: none;
+        height: 8px;
+        outline: none;
+        background: -webkit-linear-gradient(left, #710707 0%, #710707 50%, #C4C4C4 50%, #C4C4C4 100%);
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background: #FFF;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+    }
     &__descr {
-        margin-top: 40px;
         display: flex;
         justify-content: space-between;
     }
@@ -50,5 +75,48 @@
         font-size: 22px;
         line-height: 38px;
         color: #000;
+    }
+    &__youtube {
+        margin-top: 40px;
+        display: flex;
+        iframe {
+            height: 254px;
+            margin-right: 42px;
+        }
+        :nth-child(3) {
+            margin-right: 0px;
+        }
+    }
+    &__slider {
+        margin: 0 auto;
+        width: 213px;
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-prev, &-next {
+            background: none;
+            border: none;
+            cursor: pointer;
+            path {
+                transition: 0.3s all;
+            }
+            &:hover {
+                path {
+                    fill: #333333;
+                }
+            }
+        }
+        &-point {
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            background-color: #999999;
+            cursor: pointer;
+            transition: 0.3s all;
+            &_active {
+                background-color: #333333;
+            }
+        }
     }
 }

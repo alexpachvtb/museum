@@ -52,7 +52,7 @@
         height: 810px;
         top: -150px;
         right: 0;
-        background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url('../assets/img/slider/slider-1.jpg') top no-repeat;
+        background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url('../assets/img/slider/1.jpg') top no-repeat;
         &-panel {
             display: flex;
             align-items: center;
@@ -84,7 +84,7 @@
             cursor: pointer;
             transition: 0.3s all;
             &_active {
-                background-color: $slider-point-active;
+                background-color: #D2B183;
             }
         }
         &-arrows {
@@ -102,7 +102,7 @@
             }
             &:hover {
                 path {
-                    fill: $slider-point-active;
+                    fill: #D2B183;
                 }
             }
         }
