@@ -103,7 +103,7 @@
             }
             &:hover {
                 path {
-                    fill: #333333;
+                    fill: $dark-red;
                 }
             }
         }
@@ -116,6 +116,9 @@
             transition: 0.3s all;
             &_active {
                 background-color: #333333;
+            }
+            &:hover {
+                background-color: $dark-red;
             }
         }
     }

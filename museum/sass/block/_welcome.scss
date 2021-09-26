@@ -86,6 +86,9 @@
             &_active {
                 background-color: #D2B183;
             }
+            &:hover {
+                background-color: #9D8665;
+            }
         }
         &-arrows {
             width: 80px;
@@ -102,7 +105,7 @@
             }
             &:hover {
                 path {
-                    fill: #D2B183;
+                    fill: #9D8665;
                 }
             }
         }

@@ -1,6 +1,6 @@
 .footer {
     min-height: 300px;
-    padding: 75px 0;
+    padding: 75px 0 50px 0;
     &__container {
         display: flex;
         column-gap: 145px;
@@ -11,6 +11,28 @@
         grid-auto-flow: column;
         grid-template-rows: repeat(3, auto);
         column-gap: 150px;
+    }
+    &__divider {
+        width: 100%;
+        height: 3px;
+        margin-top: 38px;
+        background-color: #666666;
+    }
+    &__copyrights {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 22px;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
     }
 }
 .nav__social {
