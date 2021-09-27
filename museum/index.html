@@ -156,7 +156,13 @@
             </div>
           </div>
         </section>
-        <section class="gallery section section_dark" id="gallery"></section>
+        <section class="gallery section section_dark" id="gallery">
+          <div class="container">
+            <h2 class="gallery__title section_title">Art gallery</h2>
+            <div class="gallery__wrapper"></div>
+          </div>
+          <div class="gallery__gradient"></div>
+        </section>
         <section class="tickets section" id="tickets">
           <div class="container">
             <h2 class="tickets__title section_title section_title-underline">Buy tickets</h2>
@@ -196,16 +202,16 @@
                       Basic 18+
                       <input type="number" min="0" max="20" value="1" readonly class="tickets__amount-number">
                     </label>
-                    <button class="tickets__amount-btn tickets__amount-btn-plus"><img src="assets/icons/plus.svg" alt="plus"></button>
-                    <button class="tickets__amount-btn tickets__amount-btn-minus"><img src="assets/icons/minus.svg" alt="minus"></button>
+                    <button class="tickets__amount-btn tickets__amount-btn-plus"></button>
+                    <button class="tickets__amount-btn tickets__amount-btn-minus"></button>
                   </div>
                   <div class="tickets__input">
                     <label class="tickets__label tickets__amount-label">
                       Senior 65+
                       <input type="number" min="0" max="20" value="1" readonly class="tickets__amount-number">
                     </label>
-                    <button class="tickets__amount-btn tickets__amount-btn-plus"><img src="assets/icons/plus.svg" alt="plus"></button>
-                    <button class="tickets__amount-btn tickets__amount-btn-minus"><img src="assets/icons/minus.svg" alt="minus"></button>
+                    <button class="tickets__amount-btn tickets__amount-btn-plus"></button>
+                    <button class="tickets__amount-btn tickets__amount-btn-minus"></button>
                   </div>
                   <div class="tickets__total">Total €220</div>
                   <button class="tickets__buy-btn">Buy Now</button>
@@ -304,6 +310,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>

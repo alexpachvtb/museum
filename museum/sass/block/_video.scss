@@ -95,6 +95,8 @@
         align-items: center;
         justify-content: space-between;
         &-prev, &-next {
+            display: flex;
+            align-items: center;
             background: none;
             border: none;
             cursor: pointer;
