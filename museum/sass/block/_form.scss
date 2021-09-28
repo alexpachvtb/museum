@@ -16,6 +16,7 @@
     opacity: 1;
   }
   &__block {
+    padding: 91px 235px;
     position: relative;
     width: 1440px;
     height: 845px;
@@ -62,5 +63,50 @@
       transform: rotate(-45deg);
       background-color: #030303;
     }
+  }
+  form {
+    display: grid;
+    grid-template-columns: 400px 530px;
+    justify-content: space-between;
+  }
+  &__data {
+    text-align: left;
+  }
+  &__logo {
+    display: block;
+    width: 85px;
+    height: 41px;
+     path {
+       fill: $font-gold;
+     }
+  }
+  &__title {
+    margin: 0;
+    margin-top: 2px;
+    font-family: Forum;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: $font-gold;
+    text-align: left;
+  }
+  &__text {
+    margin-top: 13px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #030303;
+    &_red {
+      color: $dark-red;
+    }
+  }
+  &__divider {
+    margin-top: 10px;
+    width: 100%;
+    height: 3px;
+    background-color: $dark-red;
+  }
+  &__overview {
+    border: 1px solid #030303;
   }
 }

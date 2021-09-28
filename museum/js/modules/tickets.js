@@ -12,7 +12,7 @@ inputAll.forEach(input => {
         }
       }
       if (e.target.className == "tickets__amount-btn tickets__amount-btn-minus") {
-        if (inputValue.value > 1) {
+        if (inputValue.value > 0) {
           inputValue.value = +inputValue.value - 1;
         }
       }
