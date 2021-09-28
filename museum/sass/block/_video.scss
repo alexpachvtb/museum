@@ -79,7 +79,9 @@
     &__youtube {
         margin-top: 40px;
         display: flex;
+        justify-content: space-between;
         iframe {
+            width: 452px;
             height: 254px;
             margin-right: 42px;
         }
