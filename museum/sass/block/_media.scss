@@ -50,3 +50,138 @@
     }
   }
 }
+@media (max-width: 1023px) {
+  .container {
+    width: 728px;
+  }
+  .header {
+    height: 110px;
+  }
+  .welcome {
+    min-height: 862px;
+    &__text {
+      text-align: center;
+    }
+    &__title {
+      padding-top: 0;
+      font-size: 40px;
+      line-height: 60px;
+    }
+    &__descr {
+      font-size: 20px;
+    }
+    &__btn {
+      display: none;
+    }
+    &__slider {
+      margin: 0 auto;
+      position: relative;
+      width: 100%;
+      margin-top: 45px;
+      &-gradient {
+        display: none;
+      }
+      &-panel {
+        position: relative;
+        margin: 0 auto;
+        width: 76%;
+        height: 103px;
+      }
+      &-img {
+        height: 93%;
+        background-size: 100%;
+      }
+    }
+    &__menu {
+      width: 100%;
+      &-divider {
+        display: block;
+      }
+    }
+    &__nav-imgs {
+      display: grid;
+    }
+  }
+  ul.welcome__social {
+    display: flex;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 380px;
+  }
+  .header {
+    height: 90px;
+    &__logo {
+      width: 140px;
+      &-icon {
+        width: 32px;
+      }
+      &-text {
+        font-size: 16px;
+      }
+    }
+  }
+  .welcome {
+    min-height: 545px;
+    &__title {
+      font-size: 28px;
+      line-height: 40px;
+      margin-top: 6px;
+    }
+    &__descr {
+      margin-top: 25px;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    &__slider {
+      margin-top: 48px;
+      height: 310px;
+      &-panel {
+        padding: 0px 25px;
+        height: 75px;
+      }
+      &-digits {
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+      &-points {
+        width: 30%;
+      }
+      &-point {
+        width: 7px;
+        height: 7px;
+      }
+      &-arrows {
+        width: 60px;
+      }
+      &-prev, &-next {
+        width: 30px;
+      }
+    }
+    &__nav-imgs {
+      height: 95px;
+      grid-template: 95px / repeat(3, minmax(auto, 95px));
+      gap: 12px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .long {
+        grid-column: 1 / 2;
+      }
+    }
+    &__menu-divider {
+      margin-top: 20px;
+    }
+    ul.welcome__social {
+      width: 260px;
+      margin-top: 24px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 95%;
+  }
+}
