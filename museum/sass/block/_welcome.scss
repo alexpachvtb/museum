@@ -2,7 +2,9 @@
     min-height: 810px;
     background: $bg-dark;
     padding: 150px 0 245px 0;
+    overflow-x: hidden;
     .container {
+        height: 100%;
         position: relative;
     }
     &__text {
@@ -48,11 +50,22 @@
     &__slider {
         position: absolute;
         z-index: 0;
-        width: 1000px;
+        width: 69%;
         height: 810px;
         top: -150px;
         right: 0;
-        background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%), url('../assets/img/slider/1.jpg') top no-repeat;
+        &-img {
+            width: 100%;
+            height: 93%;
+            background: url('../assets/img/slider/1.jpg') center center / cover no-repeat;
+        }
+        &-gradient {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+        }
         &-panel {
             display: flex;
             align-items: center;
@@ -61,7 +74,7 @@
             padding: 0 75px;
             bottom: 0;
             right: 0;
-            width: 600px;
+            width: 60%;
             height: 120px;
             background-color: #030303;
         }
@@ -75,7 +88,7 @@
         &-points {
             display: flex;
             justify-content: space-between;
-            width: 180px;
+            width: 40%;
         }
         &-point {
             width: 16px;
@@ -108,6 +121,36 @@
                     fill: #9D8665;
                 }
             }
+        }
+    }
+    &__menu {
+        position: absolute;
+        width: 297px;
+        height: 100%;
+        background-color: #000;
+        left: -297px;
+        z-index: 4;
+        transition: 0.5s all;
+        &-active {
+            left: 0;
+        }
+    }
+    &__nav-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 22px 0px 0px 55px;
+    }
+    &__nav-link {
+        position: relative;
+        font-size: 20px;
+        line-height: 48px;
+        &-arrow {
+            position: absolute;
+            width: 7px;
+            height: 12px;
+            top: 50%;
+            transform: translateY(-30%);
+            left: 113px;
         }
     }
 }
