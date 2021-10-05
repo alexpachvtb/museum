@@ -113,6 +113,56 @@
       width: 73%;
     }
   }
+  .video  {
+    min-height: 1000px;
+    padding: 60px 0;
+    &__title {
+      font-size: 50px;
+      line-height: 75px;
+    }
+    &__text {
+      display: none;
+    }
+    &__player {
+      margin-top: 40px;
+      height: 500px;
+    }
+    &__youtube iframe {
+      height: 175px;
+      margin-right: 37px;
+    }
+    &__controls {
+      padding: 0 32px;
+      &-volume {
+        width: 40px;
+        margin-right: -23px;
+        img {
+          width: 26px;
+          height: 20px;
+          margin-top: 4px;
+        }
+      }
+      &-fullscreen {
+        img {
+          width: 26px;
+          height: 26px;
+        }
+      }
+      &-play {
+        img {
+          width: 152px;
+          height: 152px;
+        }
+      }
+    }
+    &__time {
+      width: 61%;
+    }
+    &__volume {
+      width: 15%;
+      margin-left: 17px;
+    }
+  }
 }
 @media (max-width: 1023px) {
   .container {
@@ -212,6 +262,53 @@
       width: 100%;
     }
   }
+  .video {
+    min-height: 837px;
+    padding: 40px 0 80px 0;
+    &__title {
+      font-size: 40px;
+      line-height: 60px;
+    }
+    &__player {
+      margin-top: 20px;
+      height: 386px;
+    }
+    &__youtube {
+      margin-top: 18px;
+      column-gap: 20px;
+      :nth-child(3) {
+        display: none;
+      }
+      iframe {
+        margin: 0;
+        height: 200px;
+      }
+    }
+    &__controls {
+      height: 14%;
+      padding: 0px 24px;
+      &-play {
+        top: 32%;
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+    &__time {
+      position: absolute;
+      top: -8px;
+      left: 0;
+      width: 100%;
+    }
+    &__volume {
+      width: 74%;
+    }
+    &__slider {
+      margin-top: 20px;
+      width: 205px;
+    }
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -306,10 +403,86 @@
     }
   }
   .explore {
+    min-height: 420px;
     padding: 40px 0;
     &__title {
       font-size: 28px;
       line-height: 40px;
+    }
+  }
+  .video {
+    min-height: 551px;
+    padding: 36px 0 40px 0;
+    &__title {
+      font-size: 28px;
+      line-height: 40px;
+    }
+    &__player {
+      height: 224px;
+    }
+    &__controls {
+      height: 22%;
+      padding: 0 13px;
+      input {
+        height: 5px;
+      }
+      &-playpause {
+        height: 20px;
+        img {
+          width: 16px;
+          height: 20px;
+        }
+      }
+      &-volume {
+        height: 14px;
+        margin: 0;
+        img {
+          width: 18px;
+          height: 14px;
+          margin: 0;
+        }
+      }
+      &-fullscreen {
+        height: 18px;
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      &-play {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+    &__time {
+      top: -5px;
+    }
+    &__volume {
+      width: 57%;
+      margin: 0;
+    }
+    &__youtube {
+      margin-top: 40px;
+      iframe {
+        width: 180px;
+        height: 100px;
+      }
+    }
+    &__slider {
+      width: 190px;
+      margin-top: 40px;
+      &-point {
+        width: 8px;
+        height: 8px;
+      }
+      &-prev, &-next {
+        svg {
+          width: 7px;
+          height: 8px;
+        }
+      }
     }
   }
 }
